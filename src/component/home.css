@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@font-face {
+    font-family: 'gill-sans';
+    src: url('../fonts/Gill\ Sans\ Heavy.otf');
+}
+.header{
+    display:flex;
+    width: 400px;
+    background-color:#CE4679; 
+    font-family: 'Lato', sans-serif;
+    /* color: #fdfdfd; */
+    color: #dddada;
+    font-weight: 900;
+    padding: 5px 0;
+}
+
+.headerRight{
+    padding-left: 110px;
+}
+.setting{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.homeLink{
+    position: relative;
+    top: -6.5px;
+    left: -2px;
+    color: #eeeaea;
+}
+
+.headerTitle{
+    position: relative;
+    /* margin-left: 100px; */
+    margin-left: 150px;
+}
+
+.homeContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    /* background-color:#CE4679; */
+    background-color:#d45f8c; 
+    color: #e9e6e6;
+    font-family: 'gill-sans', sans-serif;
+    font-size: 22px;
+}
+
+.item{
+    height: 200px;
+    /* background: url('../img/pets2.png'), #FC5897; */
+    background:  url("../img/pets5.png") no-repeat left 40px center;
+    /* background-size: cover; */
+    /* background-color:  #fd2087; */
+    background-color:  #e64a83;
+    /* margin-bottom: 50px; */
+    color: #e9e6e6;
+   
+}
+
+.rottweiler{
+    background: url("../img/rottweiler.png") no-repeat top 20px center;
+}
+.dachshund{
+    background: url("../img/dachshund.png") no-repeat top 20px center;
+}
+.boxer{
+    background: url("../img/boxer.png") no-repeat top 20px center;
+}
+.beagle{
+    background: url("../img/beagle.png") no-repeat top 20px center;
+}
+.border{
+    background: url("../img/border.png") no-repeat top 20px center;
+}
+.tabby{
+    background: url("../img/tabby.png") no-repeat top 20px center;
+    
+}
+
+
+.allPets{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    left: 210px;
+    text-align: end;
+    top: 60px;
+}
+.pets{
+    text-align: end;
+  position: relative;
+  left: 10px;
+  top: 130px;
+  display: inline-block;
+  width: 140px;
+}
+.right{
+    position: relative;
+    left: 170px;
+    top: -10px;
+}
+
+.number{
+    position: relative;
+    top: 80px;
+    left: 125px;
+    color: #d4d4d4;
+    font-size: 15px;
+   
+}
+
+.numbers{
+    color: #d4d4d4;
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+    left: -5px;
+    text-align: end;
+}
+
+.num{
+    left: 170px;
+    top: 125px;
+}
+.views{
+    /* color: ; */
+}
+
+.items{
+    height: 200px;
+    background-color:#CE4679;
+    color: #e9e6e6;
+}
+
+.items2{
+    height: 200px;
+    background-color:#D84880;
+    color: #e9e6e6;
+}
+.title{
+    grid-column: 1 / span 2;
+    height: 25px;
+    /* background-color: #e64a83; */
+    font-family: 'gill-sans', sans-serif;
+    color: #d4d4d4;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 380px;
+}

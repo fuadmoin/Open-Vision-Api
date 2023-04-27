@@ -3,7 +3,11 @@ import React, {useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 import { fetchAnimals } from '../redux/animals/animalSlice';
-
+import './home.css';
+import back from '../img/left.png';
+import mic from '../img/mic.png';
+import setting from '../img/settings.png';
+import right from '../img/right.png';
 
 const Home = () => {
     const dispatch = useDispatch(); 
@@ -24,6 +28,11 @@ const Home = () => {
         if(!animals.length)
         dispatch(fetchAnimals());
     }, [dispatch, animals]);
+const displayStyles = {
+    textDecoration: "none",
+    color: "black",
+    gridColumn: "1 / span 2",
+};
 const displayStyle = {
     textDecoration: "none",
     color: "black",
@@ -31,19 +40,55 @@ const displayStyle = {
 
   return (
     <div>
-        <h1>Home</h1>
+        <div className="header">
+            {/* <div className="goBack"> <NavLink style={displayStyles} to={'./'}>
+                <img src={back} alt="back" /><span className="homeLink">Home</span> </NavLink>
+                 </div> */}
+                 <span className="headerTitle">Home</span>
+                 <div className="headerRight">
+                    <img className="setting" src={mic} alt="mic" />
+                    <img className="setting" src={setting} alt="setting" />
+                 </div>
+        </div>
          {
 !loading && animals.length ? (
     <main className="homeContainer">   
    
- <div className="item"> <NavLink style={displayStyle} to={'./allBreeds'}> Animals and Their Breeds  {animals.length}</NavLink> </div>
-    <p>Grouped breeds</p>
-    <div className="items">      <NavLink style={displayStyle} to={'./tabby'}> <p>Group Tabby {category1.length}</p> </NavLink> </div>
-    <div className="items">  <NavLink style={displayStyle} to={'./border'}> <p>Group Border {category2.length}</p> </NavLink> </div>
-    <div className="items">  <NavLink style={displayStyle} to={'./beagle'}>  <p>Group Beagle {category3.length}</p> </NavLink> </div>
-    <div className="items">  <NavLink style={displayStyle} to={'./boxer'}>  <p>Group Boxer {category4.length}</p> </NavLink> </div>
-    <div className="items"> <NavLink style={displayStyle} to={'./dachshund'}>  <p>Group Dachshund {category5.length}</p> </NavLink> </div>
-    <div className="items">  <NavLink style={displayStyle} to={'./rottweiler'}> <p>Group Rottweiler {category6.length}</p> </NavLink> </div>
+  <NavLink style={displayStyles} to={'./allBreeds'}> <div className="item"> <small className="allPets"> ANIMALS AND THEIR BREEDS  </small> <small className="number"> {animals.length} <small className="views"> animals</small></small>
+
+ </div> </NavLink> 
+ <small className="title">GROUPED BREEDS</small>
+      <NavLink style={displayStyle} to={'./tabby'}> <div className="items2 tabby"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP TABBY</small>
+        <small className="numbers"> {category1.length}</small> 
+        </div></NavLink>
+      <NavLink style={displayStyle} to={'./border'}> <div className="items border"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP BORDER</small>
+        <small className="numbers num"> {category2.length}</small> 
+        </div></NavLink>
+      <NavLink style={displayStyle} to={'./beagle'}> <div className="items beagle"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP BEAGLE</small>
+        <small className="numbers"> {category3.length}</small> 
+        </div></NavLink>
+      <NavLink style={displayStyle} to={'./boxer'}> <div className="items2 boxer"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP BOXER</small>
+        <small className="numbers num"> {category4.length}</small> 
+        </div></NavLink>
+      <NavLink style={displayStyle} to={'./dachshund'}> <div className="items2 dachshund"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP DACHSHUND</small>
+        <small className="numbers"> {category5.length}</small> 
+        </div></NavLink>
+      <NavLink style={displayStyle} to={'./rottweiler'}> <div className="items rottweiler"> 
+      <img className="setting right" src={right} alt="right"/>
+       <small className="pets">GROUP ROTTWEILER</small>
+        <small className="numbers num"> {category6.length}</small> 
+        </div></NavLink>
+    
    
     </main>
 
