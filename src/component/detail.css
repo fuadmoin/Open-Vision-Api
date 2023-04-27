@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@font-face {
+    font-family: 'gill-sans';
+    src: url('../fonts/Gill\ Sans\ Heavy.otf');
+}
+
+.header{
+    display:flex;
+    width: 400px;
+    background-color:#CE4679; 
+    font-family: 'Lato', sans-serif;
+    color: #dddada;
+    font-weight: 900;
+    padding: 5px 0;
+}
+
+.headerRight2{
+    padding-left: 10px;
+}
+.setting2{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.homeLink2{
+    position: relative;
+    top: -6.5px;
+    left: -2px;
+    color: #eeeaea;
+}
+
+.headerTitle2{
+    position: relative;
+    /* margin-left: 100px; */
+    display: inline-block;
+    width: 240px;
+    /* background-color: black; */
+    text-align: center;
+}
+.detailsContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    /* background-color:#CE4679; */
+    background-color:#d45f8c; 
+    color: #e9e6e6;
+    font-family: 'gill-sans', sans-serif;
+    font-size: 22px;
+}
+
+.allPets{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    left: 240px;
+    text-align: end;
+    top: 60px;
+}
+
+.number{
+    position: relative;
+    top: 80px;
+    left: 155px;
+    color: #d4d4d4;
+    font-size: 15px;
+}
+
+.title{
+    grid-column: 1 / span 2;
+    height: 25px;
+    /* background-color: #e64a83; */
+    font-family: 'gill-sans', sans-serif;
+    color: #d4d4d4;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 380px;
+}
+.breedSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.breedsContainer{
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.breedsContainer:nth-child(odd){
+   background-color:  #e64a83;
+}
+.breeds{
+    display: inline-block;
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+
+.right2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 270px;
+    top: -16px;
+}
+
+.nums{
+    display: inline-block;
+    top:0px;
+    left: 200px;
+    width: 10px;
+}
+
+.views{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    margin-left: 22px;
+}

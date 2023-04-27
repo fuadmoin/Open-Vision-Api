@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './component/Home';
-import Tabby from './component/Tabby';
-import Beagle from './component/Beagle';
-import AllBreeds from './component/AllBreeds';
-import Boxer from './component/Boxer';
-import Dachshund from './component/Dachshund';
-import Border from './component/Border';
-import Rottweiler from './component/Rottweiler';
+import Details from './component/Details';
+import Tabby from './pages/Tabby';
+import Beagle from './pages/Beagle';
+import AllBreeds from './pages/AllBreeds';
+import Boxer from './pages/Boxer';
+import Dachshund from './pages/Dachshund';
+import Border from './pages/Border';
+import Rottweiler from './pages/Rottweiler';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/details" element={<Details />} />
           <Route path="/allBreeds" element={<AllBreeds />} />
           <Route path="/tabby" element={<Tabby />} />
           <Route path="/beagle" element={<Beagle />} />
