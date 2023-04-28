@@ -18,7 +18,7 @@ const Details = ({ picture, animals, title }) => {
     backgroundColor: '#e64a83',
     height: '200px',
     color: '#e9e6e6',
-
+    width: '97%',
   };
   const uniqueData = {};
   animals.forEach((breed) => {

@@ -29,11 +29,12 @@ const Home = () => {
     textDecoration: 'none',
     color: 'black',
     gridColumn: '1 / span 2',
+    width: '97%',
   };
   const displayStyle = {
     textDecoration: 'none',
     color: 'black',
-    // width: "98%",
+    width: '97%',
   };
 
   return (

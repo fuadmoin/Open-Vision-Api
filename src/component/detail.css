@@ -76,12 +76,12 @@
   position: relative;
   top: 5px;
   left: 10px;
-  width: 380px;
 }
 
 .breedSection {
   display: flex;
   flex-direction: column;
+  width: 97%;
 }
 
 .breedsContainer {
