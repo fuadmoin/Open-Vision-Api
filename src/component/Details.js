@@ -19,6 +19,7 @@ const Details = ({picture, animals, title}) => {
         backgroundColor: "#e64a83",
         height: "200px",
         color: "#e9e6e6",
+        
     };
     let uniqueData = {};
     animals.forEach(breed => {
@@ -44,7 +45,7 @@ const Details = ({picture, animals, title}) => {
 
 <main className="detailsContainer"> 
 <header style={backStyles} className="item"> <small className="allPets"> ANIMALS AND THEIR BREEDS  </small>
-      <small className="number"> {animals.length} 
+      <small className="numbe"> {animals.length} 
       <small > animals</small></small>
 
  </header>
@@ -55,7 +56,7 @@ const Details = ({picture, animals, title}) => {
     <article className="breedsContainer">
     <small className="breeds">{breed[0]}</small>
     <div className="rightSection">
-    <small className="number nums"> {breed[1]} 
+    <small className="numbe nums"> {breed[1]} 
     <small className="views"> {breed[1] > 1? "animals": "animal"}</small></small>
     <img className=" right2" src={right} alt="right"/>
    </div>

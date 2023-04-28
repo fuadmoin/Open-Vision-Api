@@ -36,11 +36,12 @@ const displayStyles = {
 const displayStyle = {
     textDecoration: "none",
     color: "black",
+    // width: "98%",
 };
 
   return (
     <div>
-        <div className="header">
+        <div className="header5">
             
                  <span className="headerTitle">Home</span>
                  <div className="headerRight">
@@ -62,32 +63,32 @@ const displayStyle = {
       <NavLink style={displayStyle} to={'./tabby'}> <div className="items2 tabby"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP TABBY</small>
-        <small className="numbers num"> {category1.length}</small> 
+        <small className="num"> {category1.length}</small> 
         </div></NavLink>
       <NavLink style={displayStyle} to={'./border'}> <div className="items border"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP BORDER</small>
-        <small className="numbers num"> {category2.length}</small> 
+        <small className="num"> {category2.length}</small> 
         </div></NavLink>
       <NavLink style={displayStyle} to={'./beagle'}> <div className="items beagle"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP BEAGLE</small>
-        <small className="numbers num"> {category3.length}</small> 
+        <small className=" num"> {category3.length}</small> 
         </div></NavLink>
       <NavLink style={displayStyle} to={'./boxer'}> <div className="items2 boxer"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP BOXER</small>
-        <small className="numbers num"> {category4.length}</small> 
+        <small className=" num"> {category4.length}</small> 
         </div></NavLink>
       <NavLink style={displayStyle} to={'./dachshund'}> <div className="items2 dachshund"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP DACHSHUND</small>
-        <small className="numbers"> {category5.length}</small> 
+        <small className="num"> {category5.length}</small> 
         </div></NavLink>
       <NavLink style={displayStyle} to={'./rottweiler'}> <div className="items rottweiler"> 
       <img className="setting right" src={right} alt="right"/>
        <small className="pets">GROUP ROTTWEILER</small>
-        <small className="numbers num5"> {category6.length}</small> 
+        <small className=" num"> {category6.length}</small> 
         </div></NavLink>
     
    

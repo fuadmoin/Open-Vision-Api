@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './component/Home';
-import Details from './component/Details';
 import Tabby from './pages/Tabby';
 import Beagle from './pages/Beagle';
 import AllBreeds from './pages/AllBreeds';
@@ -15,7 +14,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/details" element={<Details />} />
           <Route path="/allBreeds" element={<AllBreeds />} />
           <Route path="/tabby" element={<Tabby />} />
           <Route path="/beagle" element={<Beagle />} />

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render the Home component 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="header5"
+    >
+      <span
+        class="headerTitle"
+      >
+        Home
+      </span>
+      <div
+        class="headerRight"
+      >
+        <img
+          alt="mic"
+          class="setting"
+          src="mic.png"
+        />
+        <img
+          alt="setting"
+          class="setting"
+          src="settings.png"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
