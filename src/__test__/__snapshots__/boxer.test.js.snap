@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Boxer should render the Boxer component 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <nav
+        class="header"
+      >
+        <div
+          class="goBack"
+        >
+           
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
+            style="text-decoration: none; color: black; grid-column: 1 / span 2;"
+          >
+            <img
+              alt="back"
+              src="left.png"
+            />
+            <span
+              class="homeLink2"
+            >
+              Home
+            </span>
+             
+          </a>
+        </div>
+        <span
+          class="headerTitle2"
+        >
+          Boxer
+        </span>
+        <div
+          class="headerRight2"
+        >
+          <img
+            alt="mic"
+            class="setting2"
+            src="mic.png"
+          />
+          <img
+            alt="setting"
+            class="setting2"
+            src="settings.png"
+          />
+        </div>
+      </nav>
+      <main
+        class="detailsContainer"
+      >
+        <header
+          class="item"
+          style="background: url(boxer2.png) no-repeat center; background-color: rgb(230, 74, 131); height: 200px; color: rgb(233, 230, 230);"
+        >
+           
+          <small
+            class="allPets"
+          >
+             ANIMALS AND THEIR BREEDS  
+          </small>
+          <small
+            class="numbe"
+          >
+             1
+            <small>
+               animals
+            </small>
+          </small>
+        </header>
+        <small
+          class="title"
+        >
+          INDIVIDUAL BREEDS
+        </small>
+        <section
+          class="breedSection"
+        >
+          <article
+            class="breedsContainer"
+          >
+            <small
+              class="breeds"
+            >
+              Boxer
+            </small>
+            <div
+              class="rightSection"
+            >
+              <small
+                class="numbe nums"
+              >
+                 1
+                <small
+                  class="views"
+                >
+                   animal
+                </small>
+              </small>
+              <img
+                alt="right"
+                class=" right2"
+                src="right.png"
+              />
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+</DocumentFragment>
+`;
