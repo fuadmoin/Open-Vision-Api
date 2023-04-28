@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import Border from '../pages/Border';
 
-
 const mockStore = configureStore([]);
 
 describe('Border', () => {
@@ -26,9 +25,9 @@ describe('Border', () => {
     component = render(
       <Provider store={store}>
         <BrowserRouter>
-        <Border />
+          <Border />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
   });
 

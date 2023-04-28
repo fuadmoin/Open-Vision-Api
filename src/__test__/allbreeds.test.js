@@ -25,9 +25,9 @@ describe('AllBreeds', () => {
     component = render(
       <Provider store={store}>
         <BrowserRouter>
-        <AllBreeds />
+          <AllBreeds />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
   });
 

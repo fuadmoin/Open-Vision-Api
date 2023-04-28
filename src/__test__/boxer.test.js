@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import Boxer from '../pages/Boxer';
 
-
 const mockStore = configureStore([]);
 
 describe('Boxer', () => {
@@ -26,9 +25,9 @@ describe('Boxer', () => {
     component = render(
       <Provider store={store}>
         <BrowserRouter>
-        <Boxer />
+          <Boxer />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
   });
 

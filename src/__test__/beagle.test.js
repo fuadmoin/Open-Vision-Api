@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import Beagle from '../pages/Beagle';
 
-
 const mockStore = configureStore([]);
 
 describe('Beagle', () => {
@@ -26,9 +25,9 @@ describe('Beagle', () => {
     component = render(
       <Provider store={store}>
         <BrowserRouter>
-        <Beagle />
+          <Beagle />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
   });
 

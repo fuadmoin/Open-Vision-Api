@@ -10,8 +10,8 @@ describe('Home', () => {
   beforeEach(() => {
     component = render(
       <Provider store={store}>
-          <Home />
-      </Provider>
+        <Home />
+      </Provider>,
     );
   });
 
@@ -22,4 +22,4 @@ describe('Home', () => {
   it('should display "ANIMALS AND THEIR BREEDS" text', () => {
     expect(screen.getByText(/Home/i)).toBeInTheDocument();
   });
-}); 
+});

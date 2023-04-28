@@ -16,7 +16,7 @@ describe('Details', () => {
     component = render(
       <BrowserRouter>
         <Details picture="test.jpg" animals={animals} title="Test Title" />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
   });
 
